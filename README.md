@@ -117,10 +117,12 @@ As tabelas criadas serão:
 ## 📈 Exemplo de Consulta (KPI de Cancelamentos)
 
 ```sql
-SELECT 
-    SUM(CASE WHEN f.status = 'Canceled' THEN 1 ELSE 0 END) AS qtd_cancelada,
-    SUM(line_total) FILTER (WHERE f.status = 'Canceled') AS valor_cancelado
-FROM dw.fato_vendas f;
+SELECT p.nome_produto, SUM(f."OrderQty" ) AS total_qtd
+FROM fato_vendas f
+JOIN dim_produto p ON f."ProductID"  = p.id_produto 
+GROUP BY p.nome_produto
+ORDER BY total_qtd DESC
+LIMIT 10;
 ```
 
 ---
@@ -128,7 +130,7 @@ FROM dw.fato_vendas f;
 ## 📚 Autor
 
 **Carlos Eduardo Pereira Dutra**  
-**Hebert Souza Raphalsky do Nascimento**
+**Hebert Souza Raphalsky do Nascimento**  
 **Luiz Eduardo de Pádua Oliveira**
 ---
 
