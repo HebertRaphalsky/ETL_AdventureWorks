@@ -12,10 +12,8 @@ Este projeto tem como objetivo construir um **Data Warehouse (DW)** baseado no c
 ├── etl.py                         # Script principal da ETL
 ├── config.py                      # Configuração de conexões (SQL Server e PostgreSQL)
 ├── requirements.txt               # Dependências do projeto
-├── dashboard.ipynb                # (Opcional) Notebook com análise dos indicadores
-├── modelo_multidimensional.png    # Diagrama estrela do modelo do DW
 ├── README.md                      # Documentação do projeto
-└── /data                          # (opcional) Dados intermediários/exportados
+└── /SQL                           # Querys de com as busca conforme KPI indicados abaixo
 ```
 
 ---
