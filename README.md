@@ -20,7 +20,7 @@ Este projeto tem como objetivo construir um **Data Warehouse (DW)** baseado no c
 
 ## ⚙️ Tecnologias Utilizadas
 
-- **Python 3.10+**  
+- **Python 3.13.7**  
 - **Pandas**  
 - **SQLAlchemy**  
 - **PyODBC**  
