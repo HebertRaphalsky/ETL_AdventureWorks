@@ -82,7 +82,7 @@ SQLSERVER = {
 
 POSTGRES = {
     "host": "localhost",
-    "database": "etl_target,
+    "database": "etl_target",
     "user": "postgres",
     "password": "sua_senha"
 }
