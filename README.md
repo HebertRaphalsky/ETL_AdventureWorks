@@ -128,7 +128,7 @@ FROM dw.fato_vendas f;
 ## 📚 Autor
 
 **Carlos Eduardo Pereira Dutra**  
-**Hebert Souza Raphalsky do Nascimento **
+**Hebert Souza Raphalsky do Nascimento**
 **Luiz Eduardo de Pádua Oliveira**
 ---
 
