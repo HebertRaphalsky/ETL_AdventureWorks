@@ -114,12 +114,12 @@ As tabelas criadas serão:
 
 ---
 
-## 📈 Exemplo de Consulta (KPI de Cancelamentos)
+## 📈  Exemplo de Consulta (KPI: Produtos Mais Vendidos)
 
 ```sql
-SELECT p.nome_produto, SUM(f."OrderQty" ) AS total_qtd
+SELECT p.nome_produto, SUM(f."OrderQty") AS total_qtd
 FROM fato_vendas f
-JOIN dim_produto p ON f."ProductID"  = p.id_produto 
+JOIN dim_produto p ON f."ProductID" = p.id_produto
 GROUP BY p.nome_produto
 ORDER BY total_qtd DESC
 LIMIT 10;
